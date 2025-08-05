@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. Additionally, I bring expertise as a data analyst, Python developer, and machine learning developer. My goal is to leverage my diverse skill set to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -92,4 +93,18 @@ export const PROJECTS = [
     link: " ",
     github: "https://github.com/YASHPAL2268/WealthLens-main.git",
   },
+
+{
+    title: "FindMyMechanic",
+    image: project5,
+    description:
+      "FindMyMechanic** is a MERN stack-based web application that helps users locate and book nearby mechanics for vehicle repair and maintenance services in real-time.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    link: " ",
+    github: "https://github.com/YASHPAL2268/FindMyMechanic.git",
+  },
+
+
+
+
 ];
