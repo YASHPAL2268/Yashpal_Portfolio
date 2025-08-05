@@ -85,7 +85,7 @@ export const PROJECTS = [
     github: "https://github.com/YASHPAL2268/task-manager-python.git ",
   },
 {
-    title: "Blogging Platform",
+    title: "WealthLens",
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
