@@ -61,7 +61,7 @@ export const PROJECTS = [
       "Spline 3D",
       "EmailJS",
     ],
-    //link: "https://jainil-protfolio.vercel.app/",
+    link: "https://yashpalportfolio-five.vercel.app/",
     github: "https://github.com/YASHPAL2268/Yashpal_Portfolio.git",
   },
 
@@ -72,25 +72,24 @@ export const PROJECTS = [
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
     link: " ",
-    github: " ",
+    github: "https://github.com/YASHPAL2268/E-Commerce-Web.git ",
   },
   {
     title: "Task Management App",
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["Python", "Tkinter", "JSON", "OS", "messagebox", "simpledialog"],
     link: " ",
-    github: " ",
+    github: "https://github.com/YASHPAL2268/task-manager-python.git ",
   },
-
-  {
+{
     title: "Blogging Platform",
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    technologies: [" Next.js", "Tailwind CSS", "Shadcn UI: ", "TypeScript"," Supabase"," Prisma"," Inngest","Clerk","PostgreSQL","•Neon DB","Gemini Flash"],
     link: " ",
-    github: " ",
+    github: "https://github.com/YASHPAL2268/WealthLens-main.git",
   },
 ];

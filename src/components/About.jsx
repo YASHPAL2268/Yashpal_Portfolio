@@ -15,6 +15,7 @@ const container = {
   },
 };
 
+
 const fadeLeft = {
   hidden: { opacity: 0, x: -60 },
   visible: {
