@@ -228,7 +228,7 @@ const Hero = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <a
-                  href="https://drive.google.com/file/d/1uqdyaX6sIkVwYRQT-PGWA3jFeXPYKLps/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/109YluOEEyEaKboSqTkKyR9nWK3oQ_hHA/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-xl border border-cyan-400 px-6 py-3 text-cyan-400 font-semibold tracking-wide hover:bg-cyan-500 hover:text-white hover:shadow-[0_8px_30px_rgba(0,255,255,0.3)] transition-all duration-300"

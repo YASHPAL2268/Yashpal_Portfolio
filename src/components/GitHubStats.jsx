@@ -1,3 +1,77 @@
+// import { useEffect, useState } from "react";
+// import axios from "axios";
+// import CountUp from "react-countup";
+
+// const GitHubStats = () => {
+//   const [stats, setStats] = useState({
+//     repos: 0,
+//     totalContributions: 0,
+//     currentYearContributions: 0,
+//   });
+
+//   const username = "JK-1205";
+
+//   useEffect(() => {
+//     const fetchGitHubData = async () => {
+//       try {
+//         const res = await axios.get(`https://api.github.com/users/${YASHPAL2268}`);
+//         const repos = res.data.public_repos;
+
+//         const contribRes = await axios.get(
+//           `https://github-contributions-api.jogruber.de/v4/${YASHPAL2268}`
+//         );
+//         const totalContributions = contribRes.data.total;
+//         const currentYear = new Date().getFullYear();
+//         const currentYearContributions =
+//           contribRes.data.years.find((y) => y.year === currentYear)?.total ?? 0;
+
+//         setStats({
+//           repos,
+//           totalContributions,
+//           currentYearContributions,
+//         });
+//       } catch (err) {
+//         console.error("Error fetching GitHub data", err);
+//       }
+//     };
+
+//     fetchGitHubData();
+//   }, []);
+
+//   return (
+//     <div className="mt-14 flex flex-wrap justify-center gap-10 text-center text-white">
+//       {[
+//         { label1: "TOTAL", label2: "REPOSITORY", value: stats.repos },
+//         {
+//           label1: "TOTAL-",
+//           label2: "CONTRIBUTIONS",
+//           value: stats.totalContributions,
+//         },
+//         {
+//           label1: "CURRENT–YEAR–",
+//           label2: "CONTRIBUTIONS",
+//           value: stats.currentYearContributions,
+//         },
+//       ].map((item, index) => (
+//         <div key={index} className="w-52">
+//           <div className="text-sm text-neutral-400 tracking-wide uppercase">
+//             {item.label1}
+//             <br />
+//             {item.label2}
+//           </div>
+//           <div className="mt-3 text-4xl font-bold">
+//             <CountUp end={item.value} duration={2} prefix="+" />
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default GitHubStats;
+
+
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CountUp from "react-countup";
@@ -5,60 +79,48 @@ import CountUp from "react-countup";
 const GitHubStats = () => {
   const [stats, setStats] = useState({
     repos: 0,
-    totalContributions: 0,
-    currentYearContributions: 0,
+    followers: 0,
+    following: 0,
   });
 
-  const username = "JK-1205";
+  const username = "YASHPAL2268";
 
   useEffect(() => {
     const fetchGitHubData = async () => {
       try {
-        const res = await axios.get(`https://api.github.com/users/${YASHPAL2268}`);
-        const repos = res.data.public_repos;
-
-        const contribRes = await axios.get(
-          `https://github-contributions-api.jogruber.de/v4/${YASHPAL2268}`
+        const res = await axios.get(
+          `https://api.github.com/users/${username}`
         );
-        const totalContributions = contribRes.data.total;
-        const currentYear = new Date().getFullYear();
-        const currentYearContributions =
-          contribRes.data.years.find((y) => y.year === currentYear)?.total ?? 0;
 
         setStats({
-          repos,
-          totalContributions,
-          currentYearContributions,
+          repos: res.data.public_repos,
+          followers: res.data.followers,
+          following: res.data.following,
         });
-      } catch (err) {
-        console.error("Error fetching GitHub data", err);
+      } catch (error) {
+        console.error("GitHub API Error:", error);
       }
     };
 
     fetchGitHubData();
   }, []);
 
+  const statsData = [
+    { label1: "TOTAL", label2: "REPOSITORIES", value: stats.repos },
+    { label1: "TOTAL", label2: "FOLLOWERS", value: stats.followers },
+    { label1: "TOTAL", label2: "FOLLOWING", value: stats.following },
+  ];
+
   return (
     <div className="mt-14 flex flex-wrap justify-center gap-10 text-center text-white">
-      {[
-        { label1: "TOTAL", label2: "REPOSITORY", value: stats.repos },
-        {
-          label1: "TOTAL-",
-          label2: "CONTRIBUTIONS",
-          value: stats.totalContributions,
-        },
-        {
-          label1: "CURRENT–YEAR–",
-          label2: "CONTRIBUTIONS",
-          value: stats.currentYearContributions,
-        },
-      ].map((item, index) => (
+      {statsData.map((item, index) => (
         <div key={index} className="w-52">
           <div className="text-sm text-neutral-400 tracking-wide uppercase">
             {item.label1}
             <br />
             {item.label2}
           </div>
+
           <div className="mt-3 text-4xl font-bold">
             <CountUp end={item.value} duration={2} prefix="+" />
           </div>
@@ -69,8 +131,3 @@ const GitHubStats = () => {
 };
 
 export default GitHubStats;
-
-
-
-
-

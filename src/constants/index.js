@@ -4,13 +4,12 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. Additionally, I bring expertise as a data analyst, Python developer, and machine learning developer. My goal is to leverage my diverse skill set to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I have strong programming knowledge in C/C++, Python, JavaScript, and SQL, and I build full-stack web applications using technologies like HTML, CSS, Tailwind CSS, React, Node.js, Express, and Flask. I also work with data analysis and basic machine learning using Python libraries such as NumPy, Pandas, Scikit-learn, and Matplotlib, along with tools like Power BI and Advanced Excel for visualization. I am comfortable working with databases including MongoDB, MySQL, and Firebase, and I use Git and GitHub for version control and project management. Along with my technical skills, I bring strong communication, teamwork, problem-solving, and leadership abilities to successfully collaborate and deliver impactful projects.`;
 
 //  With 5 years of hands-on experience,
 
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer, data analyst, Python developer, and machine learning developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
-
+export const ABOUT_TEXT = ` I am a dedicated and versatile full stack developer with strong programming knowledge in C/C++, Python, JavaScript, and SQL. I specialize in building efficient and scalable web applications using technologies such as HTML, CSS, Tailwind CSS, React, Node.js, Express, and Flask. Along with web development, I have experience working with data analysis and basic machine learning using Python libraries like NumPy, Pandas, Scikit-learn, and Matplotlib, and I use tools such as Power BI and Advanced Excel to create meaningful data visualizations and reports. I am comfortable working with databases including MongoDB, MySQL, and Firebase, and I use Git and GitHub for version control and project collaboration. I enjoy solving complex problems, learning new technologies, and working in team environments to build innovative solutions that create real-world impact.`;
 // export const EXPERIENCES = [
 //   {
 //     year: "2023 - Present",
@@ -103,8 +102,4 @@ export const PROJECTS = [
     link: " ",
     github: "https://github.com/YASHPAL2268/FindMyMechanic.git",
   },
-
-
-
-
 ];
